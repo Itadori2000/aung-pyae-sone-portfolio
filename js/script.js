@@ -4,6 +4,8 @@ let aqua = document.querySelector('.aqua');
 let body = document.querySelector('.preloader-container');
 let number = document.querySelector('.number');
 let percentBar = document.querySelector('.percent-bar');
+let filterImges = document.querySelectorAll('.project-img');
+
 
 
 let interval = setInterval(()=>{
@@ -21,6 +23,7 @@ let interval = setInterval(()=>{
         })
     }
 },80)
+
 
 let icon = document.getElementById('icon');
 icon.onclick = () => {
@@ -54,6 +57,36 @@ window.addEventListener('load', () => {
     },10000);
 });
 
+window.addEventListener('load',()=>{
+    const filterItem = document.querySelector('.items-links');
 
+    filterItem.addEventListener('click', (selectedItem)=>{
+        if (selectedItem.target.classList.contains('item-link')) {
+            document.querySelector('.active').classList.remove('.active');
+        }
+    })
+})
+
+window.addEventListener('load', () => {
+    const filterItem = document.querySelector('.items-links'); 
+
+    filterItem.addEventListener('click', (selectedItem) => {
+        if (selectedItem.target.classList.contains('item-link')) {
+            document.querySelector('.active').classList.remove('active'); 
+            selectedItem.target.classList.add('active'); 
+            let filterName = selectedItem.target.getAttribute('data-name');
+            filterImges.forEach((image)=>{
+                let filterImges = image.getAttribute('data-name');
+                if ((filterImges == filterName) || filterName == 'all') {
+                    image.style.display = 'block';
+                }else{
+                    image.style.display = 'none';
+                }
+            })
+        }
+    });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
 
 
