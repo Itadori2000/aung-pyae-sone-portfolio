@@ -7,7 +7,6 @@ let percentBar = document.querySelector('.percent-bar');
 let filterImges = document.querySelectorAll('.project-img');
 
 
-
 let interval = setInterval(()=>{
     number.innerHTML = i + '<span>%</span>';
     percentBar.style.width = i + '%';
