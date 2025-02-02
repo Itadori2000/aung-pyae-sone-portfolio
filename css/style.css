@@ -519,52 +519,65 @@ body {
   }
 }
 @media (max-width: 768px) {
-  #menu-content .nav-section .right-nav .nav-menu {
-    display: none;
-  }
-  #menu-content .nav-section .right-nav .nav-menu-btn {
+  #main-content .nav-section .navbar .nav-links {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #333;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
   }
-  #menu-content .hero-section {
+  #main-content .nav-section .navbar .nav-links li {
+    margin: 10px 0;
+  }
+  #main-content .nav-section .navbar .menu-bar {
+    display: block;
+  }
+  #main-content .hero-section {
     text-align: center;
   }
-  #menu-content .hero-section .main {
+  #main-content .hero-section .main {
     flex-direction: column;
   }
-  #menu-content .hero-section .main .left {
+  #main-content .hero-section .main .left {
     order: 2;
   }
-  #menu-content .hero-section .main .left .btn {
+  #main-content .hero-section .main .left .btn {
     width: 45%;
   }
-  #menu-content .hero-section .main .right {
+  #main-content .hero-section .main .right {
     order: 1;
     margin-bottom: 2rem;
   }
-  #menu-content .about-section {
+  #main-content .about-section {
     padding: 0 2rem;
   }
-  #menu-content .about-section .info-container .personal-info {
+  #main-content .about-section .info-container .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  #menu-content .about-section .info-container .personal-info span {
+  #main-content .about-section .info-container .personal-info span {
     display: block;
   }
-  #menu-content .about-section .btn-container {
+  #main-content .about-section .btn-container {
     padding-bottom: 3rem;
   }
-  #menu-content .skills-section {
+  #main-content .skills-section {
     padding: 0 2rem;
   }
-  #menu-content .projects-section {
+  #main-content .projects-section {
     padding: 0 2rem;
   }
-  #menu-content .projects-section .items-links {
+  #main-content .projects-section .items-links {
     flex-direction: column;
   }
-  #menu-content .projects-section .img-container {
+  #main-content .projects-section .img-container {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
