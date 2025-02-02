@@ -42,18 +42,18 @@ let typed = new Typed(".typing",{
 
 
 
-// window.addEventListener('load', () => {
-//     const preloader = document.getElementById('preloader');
-//     const mainContent = document.getElementById('main-content');
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    const mainContent = document.getElementById('main-content');
 
-//     setTimeout(() => {
+    setTimeout(() => {
       
-//       preloader.style.display = 'none';
-//       mainContent.style.display = 'block';
-//     },);
-// });
+      preloader.style.display = 'none';
+      mainContent.style.display = 'block';
+    },10000);
+});
 
-
+document.getElementById("year").textContent = new Date().getFullYear();
 
 
 
