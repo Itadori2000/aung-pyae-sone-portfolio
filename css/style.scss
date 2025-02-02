@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "poppin";
-    src: url(/font/poppins.ttf);
+    src: url("/font/poppins.ttf");
 }
 @font-face {
     font-family: "poppin-bold";
@@ -159,7 +159,7 @@ body{
             color: var(--secondary-color);
             margin-left: 2rem;
         }
-    }
+    
     .hero-section{
     
         .main{
