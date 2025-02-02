@@ -124,55 +124,22 @@ body {
 }
 
 #main-content {
-  display: none;
   /*      About Section       */
   /*      Skills Section       */
   /*      Projects Section       */
   /*      Footer Section       */
 }
-#main-content .nav-section .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+#main-content .nav-section h3 {
   color: var(--secondary-color);
-  position: relative;
 }
-#main-content .nav-section .navbar h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--secondary-color);
-  font-family: "Lilita One", serif;
-}
-#main-content .nav-section .navbar h2 span {
-  color: #31511E;
-  font-family: "Lilita One", serif;
-}
-#main-content .nav-section .navbar .nav-links li {
-  margin: 0 15px;
-}
-#main-content .nav-section .navbar .nav-links li a {
-  text-decoration: none;
-  color: var(--secondary-color);
-  position: relative;
-  transition: color 0.3s;
-}
-#main-content .nav-section .navbar .nav-links li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 3px;
-  background: #54b61b;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-#main-content .nav-section .navbar .nav-links li a:hover {
+#main-content .nav-section h3 span {
   color: #54b61b;
 }
-#main-content .nav-section .navbar .nav-links li a:hover::after {
-  transform: scaleX(1);
+#main-content .nav-section .menu-icon {
+  color: var(--secondary-color);
+}
+#main-content .nav-section li a {
+  color: var(--secondary-color);
 }
 #main-content .nav-section #icon {
   width: 30px;
@@ -526,11 +493,18 @@ body {
   }
 }
 @media (max-width: 1200px) {
-  .about-section {
+  #main-content .about-section {
     min-height: 55vh;
   }
 }
 @media (max-width: 700px) {
+  .nav-section .right-nav .nav-menu {
+    display: none;
+  }
+  .nav-section .right-nav .nav-menu-btn {
+    display: flex;
+    align-items: center;
+  }
   .footerNav ul {
     flex-direction: column;
     padding: 0;
@@ -546,65 +520,52 @@ body {
   }
 }
 @media (max-width: 768px) {
-  #main-content .nav-section .navbar .nav-links {
+  #menu-content .nav-section .right-nav .nav-menu {
+    display: none;
+  }
+  #menu-content .nav-section .right-nav .nav-menu-btn {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #333;
-    text-align: center;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
   }
-  #main-content .nav-section .navbar .nav-links li {
-    margin: 10px 0;
-  }
-  #main-content .nav-section .navbar .menu-bar {
-    display: block;
-  }
-  #main-content .hero-section {
+  #menu-content .hero-section {
     text-align: center;
   }
-  #main-content .hero-section .main {
+  #menu-content .hero-section .main {
     flex-direction: column;
   }
-  #main-content .hero-section .main .left {
+  #menu-content .hero-section .main .left {
     order: 2;
   }
-  #main-content .hero-section .main .left .btn {
+  #menu-content .hero-section .main .left .btn {
     width: 45%;
   }
-  #main-content .hero-section .main .right {
+  #menu-content .hero-section .main .right {
     order: 1;
     margin-bottom: 2rem;
   }
-  #main-content .about-section {
+  #menu-content .about-section {
     padding: 0 2rem;
   }
-  #main-content .about-section .info-container .personal-info {
+  #menu-content .about-section .info-container .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  #main-content .about-section .info-container .personal-info span {
+  #menu-content .about-section .info-container .personal-info span {
     display: block;
   }
-  #main-content .about-section .btn-container {
+  #menu-content .about-section .btn-container {
     padding-bottom: 3rem;
   }
-  #main-content .skills-section {
+  #menu-content .skills-section {
     padding: 0 2rem;
   }
-  #main-content .projects-section {
+  #menu-content .projects-section {
     padding: 0 2rem;
   }
-  #main-content .projects-section .items-links {
+  #menu-content .projects-section .items-links {
     flex-direction: column;
   }
-  #main-content .projects-section .img-container {
+  #menu-content .projects-section .img-container {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

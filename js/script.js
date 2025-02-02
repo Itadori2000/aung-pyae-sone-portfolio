@@ -4,7 +4,6 @@ let aqua = document.querySelector('.aqua');
 let body = document.querySelector('.preloader-container');
 let number = document.querySelector('.number');
 let percentBar = document.querySelector('.percent-bar');
-let filterImges = document.querySelectorAll('.project-img');
 
 
 let interval = setInterval(()=>{
@@ -22,7 +21,6 @@ let interval = setInterval(()=>{
         })
     }
 },80)
-
 
 let icon = document.getElementById('icon');
 icon.onclick = () => {
@@ -44,48 +42,18 @@ let typed = new Typed(".typing",{
 
 
 
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    const mainContent = document.getElementById('main-content');
+// window.addEventListener('load', () => {
+//     const preloader = document.getElementById('preloader');
+//     const mainContent = document.getElementById('main-content');
 
-    // Simulate loading time (optional)
-    setTimeout(() => {
-      // Hide the loading screen and show the main content
-      preloader.style.display = 'none';
-      mainContent.style.display = 'block';
-    },10000);
-});
+//     setTimeout(() => {
+      
+//       preloader.style.display = 'none';
+//       mainContent.style.display = 'block';
+//     },);
+// });
 
-window.addEventListener('load',()=>{
-    const filterItem = document.querySelector('.items-links');
 
-    filterItem.addEventListener('click', (selectedItem)=>{
-        if (selectedItem.target.classList.contains('item-link')) {
-            document.querySelector('.active').classList.remove('.active');
-        }
-    })
-})
 
-window.addEventListener('load', () => {
-    const filterItem = document.querySelector('.items-links'); 
-
-    filterItem.addEventListener('click', (selectedItem) => {
-        if (selectedItem.target.classList.contains('item-link')) {
-            document.querySelector('.active').classList.remove('active'); 
-            selectedItem.target.classList.add('active'); 
-            let filterName = selectedItem.target.getAttribute('data-name');
-            filterImges.forEach((image)=>{
-                let filterImges = image.getAttribute('data-name');
-                if ((filterImges == filterName) || filterName == 'all') {
-                    image.style.display = 'block';
-                }else{
-                    image.style.display = 'none';
-                }
-            })
-        }
-    });
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
 
 

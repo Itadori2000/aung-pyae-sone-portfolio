@@ -126,54 +126,27 @@ body{
     
 }
 #main-content{
-    display: none;
+    // display: none;
     .nav-section{
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
+         
+        h3{
             color: var(--secondary-color);
-            position: relative;
-            h2 {
-                font-size: 2rem;
-                font-weight: 700;
+            span{
+                color: #54b61b;
+            }
+        }
+        .menu-icon{
+            color: var(--secondary-color);
+        }
+        li{
+            a{
                 color: var(--secondary-color);
-                font-family: "Lilita One", serif;
-                span{
-                    color: #31511E;
-                    font-family: "Lilita One", serif;
+
                 }
             }
-            .nav-links{
-                li {
-                    margin: 0 15px;
-                    a{
-                        text-decoration: none;
-                        color: var(--secondary-color);
-                        position: relative;
-                        transition: color 0.3s;
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            left: 0;
-                            bottom: -5px;
-                            width: 100%;
-                            height: 3px;
-                            background: #54b61b;
-                            transform: scaleX(0);
-                            transition: transform 0.3s ease-in-out;
-                        }
-                        &:hover {
-                            color: #54b61b;
-                        }
-                        &:hover::after {
-                            transform: scaleX(1);
-                        }
-                    }
-                }
-            }
-        }   
+        }
+        
+        
         #icon{
                 width: 30px;
                 height: 30px;
@@ -563,13 +536,26 @@ body{
 
 
 @media (max-width:1200px) {
-    
-    .about-section{
-        min-height: 55vh;
-    
+    #main-content{
+        
+        .about-section{
+            min-height: 55vh;
+        
+        }
     }
 }
 @media (max-width: 700px){
+    .nav-section{
+        .right-nav{
+            .nav-menu{
+                display: none;
+            }
+            .nav-menu-btn{
+               display: flex;
+               align-items: center;
+            }
+        }
+    }
     .footerNav ul{
         flex-direction: column;
         padding: 0;
@@ -586,32 +572,18 @@ body{
      
      
 }
-@media (max-width:768px) {
-    #main-content{
+@media (max-width:768px){
+    #menu-content{
         .nav-section{
-            .navbar{
-                .nav-links {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
-                    position: absolute;
-                    top: 60px;
-                    left: 0;
-                    background: #333;
-                    text-align: center;
-                    height: 0;
-                    overflow: hidden;
-                    transition: height 0.3s ease-in-out;
-                    li {
-                        margin: 10px 0;
-                    }    
+            .right-nav{
+                .nav-menu{
+                    display: none;
                 }
-                .menu-bar{
-                    display: block;
+                .nav-menu-btn{
+                   display: flex;
+                   align-items: center;
                 }
-            }  
-            
+            }
         }
         .hero-section{
             text-align: center;
@@ -661,6 +633,4 @@ body{
             }
         }
     }
-    
 }
-

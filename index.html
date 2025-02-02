@@ -12,7 +12,7 @@
 </head>
 <body>
     <!------  Preloader  ------>
-    <div id="preloader">
+    <!-- <div id="preloader">
         <section class="preloader-container">
             <div class="aqua">
                 <span class="percent-bar"><h3 class="number">0%</h3></span>
@@ -20,14 +20,14 @@
             <h2 class="welcome-text">Portfolio</h2>
             
         </section>
-    </div>
+    </div> -->
     <!-- Main-content -->
     <div id="main-content">
         <!-------  Nav-Bar ------->
-    <section class="nav-section container-fluid">
-        <nav class="navbar py-4 px-md-5">
+    <section class="nav-section container-fluid py-4">
+        <!-- <nav class="navbar py-4 px-md-5">
             <h2>AU<span>NG</span></h2>
-            <ul class="nav-links d-flex list-unstyled">
+            <ul class="nav-links d-flex list-unstyled" id="menu-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -38,9 +38,40 @@
                 <img src="img/moon.png" id="icon" alt="Toggle Dark Mode">
                 <i class="fa-solid fa-bars menu-bar"></i>
             </div>   
-        </nav>
-            
+        </nav> -->
+        <nav class="navbar navbar-expand-lg mx-4">
+            <div class="container-fluid">
+              <h3>AU<span>NG</span></h3>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="menu-icon fa fa-bars"></i>
+              </button>
+              
+              <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>  
+                <img src="img/moon.png" id="icon" alt="Toggle Dark Mode">
+
+              </div>
+              
+            </div>
+          </nav>
     </section>
+    
     <!-------  Hero-section ------->
     <section class="hero-section mb-5 d-flex justify-content-center" id="home">
         <div class="row main pt-5 d-flex align-items-center mb-5">
