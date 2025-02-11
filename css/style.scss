@@ -136,14 +136,11 @@ body{
             }
         }
         .mobile-nav{
-            h3{
-                color: #212121;
-            }
-            
+            background: #2f6d0b;
             ul{
                 li{
                     a{
-                        color: #212121;
+                        color: var(--secondary-color);
                         position: relative;
                         &::before{
                             content: "";

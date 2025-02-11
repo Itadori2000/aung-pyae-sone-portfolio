@@ -135,11 +135,11 @@ body {
 #main-content .nav-section h3 span {
   color: #54b61b;
 }
-#main-content .nav-section .mobile-nav h3 {
-  color: #212121;
+#main-content .nav-section .mobile-nav {
+  background: #2f6d0b;
 }
 #main-content .nav-section .mobile-nav ul li a {
-  color: #212121;
+  color: var(--secondary-color);
   position: relative;
 }
 #main-content .nav-section .mobile-nav ul li a::before {
