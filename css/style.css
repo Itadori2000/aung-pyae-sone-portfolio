@@ -130,26 +130,52 @@ body {
 }
 #main-content .nav-section h3 {
   color: var(--secondary-color);
+  font-size: 2rem;
 }
 #main-content .nav-section h3 span {
   color: #54b61b;
 }
-#main-content .nav-section .menu-icon {
-  color: var(--secondary-color);
+#main-content .nav-section .mobile-nav h3 {
+  color: #212121;
 }
-#main-content .nav-section li a {
-  color: var(--secondary-color);
+#main-content .nav-section .mobile-nav ul li a {
+  color: #212121;
+  position: relative;
+}
+#main-content .nav-section .mobile-nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #54b61b;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+#main-content .nav-section .mobile-nav ul li a:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+#main-content .nav-section .mobile-nav ul li a:hover {
+  color: #54b61b;
 }
 #main-content .nav-section #icon {
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-#main-content .nav-section .menu-bar {
-  display: none;
+#main-content .nav-section .icon-container {
+  border: none;
+}
+#main-content .nav-section .icon-container:focus {
+  box-shadow: none;
+  outline: none;
+}
+#main-content .nav-section .icon-container .menu-icon {
   font-size: 25px;
   color: var(--secondary-color);
-  margin-left: 2rem;
 }
 #main-content .hero-section .main {
   max-width: 1300px;
@@ -493,17 +519,10 @@ body {
 }
 @media (max-width: 1200px) {
   #main-content .about-section {
-    min-height: 55vh;
+    min-height: 30vh;
   }
 }
 @media (max-width: 700px) {
-  .nav-section .right-nav .nav-menu {
-    display: none;
-  }
-  .nav-section .right-nav .nav-menu-btn {
-    display: flex;
-    align-items: center;
-  }
   .footerNav ul {
     flex-direction: column;
     padding: 0;
@@ -519,25 +538,15 @@ body {
   }
 }
 @media (max-width: 768px) {
-  #main-content .nav-section .navbar .nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #333;
-    text-align: center;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
+  #preloader .preloader-container .aqua {
+    width: 320px;
   }
-  #main-content .nav-section .navbar .nav-links li {
-    margin: 10px 0;
+  #preloader .preloader-container .welcome-text {
+    font-size: 2rem;
   }
-  #main-content .nav-section .navbar .menu-bar {
-    display: block;
+  #main-content .nav-section ul li a {
+    padding: 1rem 0 1rem;
+    font-size: 1.2rem;
   }
   #main-content .hero-section {
     text-align: center;

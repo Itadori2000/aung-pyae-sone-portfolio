@@ -25,43 +25,50 @@
     <div id="main-content">
         <!-------  Nav-Bar ------->
     <section class="nav-section container-fluid py-4">
-        <nav class="navbar navbar-expand-lg mx-lg-4">
-            <div class="container-fluid">
-              <h3>AU<span>NG</span></h3>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="menu-icon fa fa-bars"></i>
-              </button>
+       
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+             <h3 class="me-auto">AU<span>NG</span></h3>
               
-              <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>  
-                <img src="img/moon.png" id="icon" alt="Toggle Dark Mode">
-
+              <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h3 class="offcanvas-title" id="offcanvasNavbarLabel">AU<span>NG</span></h3>
+                  <button type="button" class="btn-close colse-menu" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2 active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+                      </li>
+                  </ul>
+                </div>
               </div>
               
+              <img src="img/moon.png" id="icon" alt="Toggle Dark Mode">
+              <button class="navbar-toggler icon-container" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars menu-icon"></i>
+              </button>
             </div>
           </nav>
+
     </section>
     
     <!-------  Hero-section ------->
     <section class="hero-section mb-5 d-flex justify-content-center" id="home">
         <div class="row main pt-5 d-flex align-items-center mb-5">
-            <div class="col col-md-6 col-lg-6 px-lg-5 left">
+            <div class="col col-md-6 col-lg-6 px-lg-5 left ">
                 <h3 class="hello">Hello, My name is </h3>
                 <h3 class="name fs-2">Aung Pyae Sone</h3>
                 <h3 class="my-profession fs-5">I'm a <span class="typing">Web Developer</span></h3>
@@ -277,7 +284,7 @@
 
 </div>
     
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
