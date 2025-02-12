@@ -544,6 +544,9 @@ body {
   #preloader .preloader-container .welcome-text {
     font-size: 2rem;
   }
+  #main-content .nav-section .mobile-nav {
+    width: 65%;
+  }
   #main-content .nav-section ul li a {
     padding: 1rem 0 1rem;
     font-size: 1.2rem;
